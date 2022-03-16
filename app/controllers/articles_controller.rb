@@ -5,5 +5,3 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
   end
-
-  # snippet for brevity
