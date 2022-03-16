@@ -3,7 +3,7 @@ module Visible
 
     VALID_STATUSES = ["public","private","archived"]
 
-    inclueded do
+    included do
         validates :status, inclusion: { in: VALID_STATUSES }
     end
 
