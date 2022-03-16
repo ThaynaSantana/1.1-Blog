@@ -8,3 +8,11 @@
     <b>Comment:</b>
     <%= comment.body %>
 </p>
+
+<p>
+    <%= linkt_to "Destroy Comment", [comment.article, comment], data: 
+    {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+    } %>
+</p>
